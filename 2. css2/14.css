@@ -1,0 +1,28 @@
+#outer{
+    height: 400px;
+    width: 400px;
+    background-color: #ffa511;
+border-radius: 50%;
+    
+}
+#leye , #reye{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+#reye{
+    left: 250px;
+}
+#mouth{
+    height: 75px;
+    width: 200px;
+    background-color: brown ;
+    position: absolute;
+    border-radius: 0 0 50px 50px;
+    top: 250px;
+    left: 100px;
+}

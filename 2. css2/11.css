@@ -1,0 +1,58 @@
+*{
+    background-color: black;
+}
+section{
+    margin-top: 100px;
+}
+div{
+    height: 50px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid black;
+    margin: 10px auto;
+    background-color: #7aa874;
+}
+div:nth-of-type(2n){
+    background-color: #f7db6a;
+}
+div:nth-of-type(3n){
+    background-color: #ebb02d;
+}
+
+/* rotate */
+#one{
+    transform: rotate(45deg);
+}
+
+/* scale - size change along axis */
+#two{
+    /* transform: scale(0.5); */
+    /* transform: scale(2,0.5); */
+    transform: scaleX(2);
+}
+
+/* translate - move along axis */
+#three{
+    transform: translateX(-200px);
+}
+
+/* skew - slant (tircha hona) along axis */
+#four{
+    transform: skewX(-45deg);
+    /* transform: skew(90deg); */
+}
+#five{
+    transform: rotate(45deg) translateX(2px);
+}
+
+#shadow{
+    height: 250px;
+    width: 250px;
+    text-align: left;
+    color: white;
+    margin: 60px auto;
+    background-color: #7aa874;
+    box-shadow: 2px 2px 15px white;
+    background-image: url(20penguin-gcjb-mediumSquareAt3X.jpg);
+    background-size: cover;
+}

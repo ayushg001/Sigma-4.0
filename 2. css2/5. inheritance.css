@@ -1,0 +1,18 @@
+div{
+    background-color: yellow;
+}
+form{
+    background-color: red;
+}
+
+/* label and input tags cannot inherit the properies from parent tags */
+
+input{
+    background-color: inherit;
+
+}
+button{
+    background-color: inherit;
+}
+
+/* some properties can not be inherited like width ,  height , border etc. */
