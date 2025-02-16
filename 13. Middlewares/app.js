@@ -43,6 +43,13 @@ app.get("/api" ,checkToken, (req,res) => {
     res.send("hi. i am root");
 });
 
+app.use( (err , req ,res ,next ) =>{      //custom error handeler
+    console.log("--------error1------")
+    let {status , message } = err;
+    res.status(status).send(message);
+    // res.send(err)
+});
+
 app.listen( 8080 , () => {
     console.log("server listening to port 8080");
 });

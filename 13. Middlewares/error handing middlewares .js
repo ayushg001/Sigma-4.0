@@ -1,5 +1,6 @@
 const express = require("express");
 const app=express();
+const ExpressError = require("./ExpressError");
 
 
 let checkToken =     (req,res,next) => {
@@ -16,13 +17,18 @@ app.get("/api" ,checkToken, (req,res) => {
 });
 
 app.get(  "/err" , (req,res) => {
-    abcd = abcd;
+    abcd = abcd; //no express error throw
 });
 
+app.get(  "/admin" , (req,res) => {
+    throw new ExpressError(403 , "access to admin is forbidden")
+})
+
 app.use( (err , req ,res ,next ) =>{      //custom error handeler
-    // console.log(err);
     console.log("--------error1------")
-    next(err);
+    let {status = 401 , message } = err;
+    res.status(status).send(message);
+    // res.send(err)
 });
 
 app.use( (err , req ,res ,next ) =>{      //custom error handeler
