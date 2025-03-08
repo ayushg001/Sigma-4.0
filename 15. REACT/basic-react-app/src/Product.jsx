@@ -1,12 +1,14 @@
 import "./Product.css";
 
-function Product({title , price  = 1 , features }){  // destructur
-    console.log(title)
+function Product({title , price  = 1 , features }){  // destructuring
+
+    
     return (
         <div className="Product">
             <h3>{title}</h3>
             <h5> Price : {price}</h5>
-            <p>{features}</p>
+           {price >= 30000 ? <p>Discount of 5%</p> : null}
+            
         </div>
     )
 }
