@@ -1,12 +1,23 @@
 import "./Product.css";
+import Price from "./Price"
 
-function Product({title , price  = 1 , features }){  // destructuring
-
+function Product({ title , idx  }){  // destructuring
+ let  oldPrices = ["12,495" , "11,900" , "1,599" , "599"];
+ let newPrice = ["8,999", "9,199" , "899", "278"];
+ let description = [
+    ["8,0000 DPI", "5 Programmable buttons"],
+    ["intuitive surface","designed for iPad Pro"],
+    ["designed for iPad Pro","intuitive surface"],
+    ["wireless","optical orientation"],
+ ]
     return (
-        <div >
-            
+        <div className="Product"  >
+            <h4> {title} </h4>
+            <p>{description[idx][0]}</p>
+            <p>{description[idx][1]}</p>
+            <Price oldPrice={oldPrices[idx]} newPrice={newPrice[idx]} />
         </div>
     )
 }
 
-export default Product
+export default Product;
