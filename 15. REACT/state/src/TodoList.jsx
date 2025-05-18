@@ -97,9 +97,10 @@ export default function TodoList(){
                 todos.map(  (todo) => (
                     <li key={todo.id} >
 
-                       <span style={{
-                            textDecoration: todo.isDone ? 'line-through' : 'none',
-        }} >                  {todo.task}   </span>
+                       <span style={
+                         todo.isDone ? {textDecoration:'line-through'}  : {}
+                            
+        } >                  {todo.task}   </span>
                         &nbsp; &nbsp;
                         <button onClick={ () => deleteTodo(todo.id)}>Delete</button> 
                                         {/*arrow fn will not run the fn */}
