@@ -1,1 +1,5 @@
 @import "tailwindcss";
+
+.box{
+    @apply bg-purple-500 m-4 rounded-xl border-black border-2 sm:bg-orange-500 md:bg-yellow-500;
+}
