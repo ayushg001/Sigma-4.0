@@ -11,7 +11,7 @@ import ThunderstormIcon from '@mui/icons-material/Thunderstorm';
 
 export default function InfoBox({info}){
 
-    const IMG_URL = "https://d2wqffb2bc8st5.cloudfront.net/images/Apr-2024/1712642313dust.jpg";
+    // const IMG_URL = "https://d2wqffb2bc8st5.cloudfront.net/images/Apr-2024/1712642313dust.jpg";
     const COLD_URL = "https://brightpunjabexpress.com/wp-content/uploads/2020/11/foggy-weather.png";
     const HOT_URL = "https://images.stockcake.com/public/3/9/3/3932cbab-e5d2-4e56-a312-396dc953f8a4_large/sunny-beach-day-stockcake.jpg";
     const RAINY_URL = "https://media.istockphoto.com/id/140453995/photo/road-with-cars-in-stormy-weather-people-running.jpg?s=612x612&w=0&k=20&c=V6MZ6LWxs6B7Yj5csCNXSTTdgiwZNckkfE3A-IH14Fk=";
